@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best of Luck!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            margin: 0;
+            overflow: hidden; /* Prevents scrollbars from showing */
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        h1 {
+            color: #2e8b57;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+        .footer {
+            margin-top: 20px;
+            color: #888;
+            font-size: 14px;
+        }
+        .sunflower {
+            position: absolute;
+            bottom: -100px; /* Adjust based on the image size */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            animation: float 5s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        @media (max-width: 375px) { /* iPhone 7 screen width */
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .sunflower {
+                width: 150px; /* Adjust size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Best of Luck!</h1>
+        <p>Dear [Friend's Name],</p>
+        <p>Wishing you the best of luck on your SST exam! You've got this!</p>
+        <p class="footer">- From [Your Name]</p>
+        <img src="https://example.com/sunflower.jpg" alt="Sunflower" class="sunflower">
+    </div>
+</body>
+</html>
